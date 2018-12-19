@@ -1,3 +1,4 @@
+Fork from jhincapie
 
 # Windows Compilation
 
@@ -7,7 +8,9 @@ There are a couple of things that have to be done manually:
 
 1- Open Visual Studio and open the NuGet Mananger - click the option to restore the packages.
 
-2- You may change Linker -> Input -> Additional Dependencies - change C:\Program Files (x86)\Windows Kits\10\Lib\10.0.17763.0\um\x64\OpenGL32.Lib to your path
+2- on the file \DSOonWin\VS2015\packages\SuiteSparseMetis_5.1.0_4.2.1.1.0.2\build\native\SuiteSparseMetis_5.1.0_4.2.1.targets replace the preprocessor flag HAS_SuiteSparseMetis_5.1.0_4.2.1 for HAS_SuiteSparseMetis_5_1_0_4_2_1
+
+3- You may change Linker -> Input -> Additional Dependencies - change C:\Program Files (x86)\Windows Kits\10\Lib\10.0.17763.0\um\x64\OpenGL32.Lib to your path
 
 
 That's all - all the credit to this SLAM implementation goes to [Jakob Engel](https://github.com/JakobEngel/dso.git) and the [TMU team](https://vision.in.tum.de/).
