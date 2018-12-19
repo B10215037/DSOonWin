@@ -1,4 +1,4 @@
-Fork from jhincapie
+Forked from jhincapie
 
 # Windows Compilation
 
